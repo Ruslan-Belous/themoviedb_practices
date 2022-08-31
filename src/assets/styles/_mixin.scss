@@ -1,0 +1,26 @@
+@import './config';
+@mixin hover-pointer {
+	&:hover {
+		cursor: pointer;
+	}
+}
+@mixin transition {
+	transition: all $trans-time ease-in-out;
+}
+@mixin media-1200-800 {
+	@media (min-width: 800px) and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
